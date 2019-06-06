@@ -53,6 +53,11 @@ class Book
      */
     private $genre;
 
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $finished;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -138,6 +143,18 @@ class Book
     public function setSlug(?string $slug): self
     {
         $this->slug = $slug;
+
+        return $this;
+    }
+
+    public function getFinished(): ?bool
+    {
+        return $this->finished;
+    }
+
+    public function setFinished(?bool $finished): self
+    {
+        $this->finished = $finished;
 
         return $this;
     }
