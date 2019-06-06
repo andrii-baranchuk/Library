@@ -18,5 +18,12 @@ class BookController extends AbstractController
             'books' => $books]);
     }
 
+    public function show(Book $book)
+    {
+        $book->getSlug();
 
+        return $this->render('view.html.twig',[
+            'book' => $book
+        ]);
+    }
 }

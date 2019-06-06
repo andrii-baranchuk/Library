@@ -18,15 +18,15 @@ class Book
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=100, unique=true)
-     * @Gedmo\Slug(fields={"name"})
-     */
-    private $slug;
-
-    /**
      * @ORM\Column(type="string", length=255)
      */
     private $name;
+
+    /**
+     * @ORM\Column(type="string", length=100, unique=true, nullable=true)
+     * @Gedmo\Slug(fields={"name"})
+     */
+    private $slug;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)

@@ -7,10 +7,17 @@
 {% block body %}
     <article class="full">
         <h1>{{ book.name }}</h1>
-{#        <b>{{ book.genre.name }}</b>#}
+        <h2>{{ book.author.name }}</h2>
+        <b>{{ book.genre.name }}</b>
         <time>{{ book.year }}</time>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="article-text">
+                    {{ book.description }}
+                </div>
+            </div>
+        </div>
         <div class="content">
-{#            {{ post.body | raw }}#}
         </div>
 {#        <div class="source">Source: <a href="{{ path('showPost') }}">News Portal</a></div>#}
     </article>

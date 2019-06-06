@@ -1,9 +1,11 @@
 index:
     path: /
     controller: App\Controller\BookController::homepage
-
+bookView:
+    path: /book/{slug}
+    controller: App\Controller\BookController::show
 new:
-    path: /book/new
+    path: /bookform/new
     controller: App\Controller\BookAdminController::new
 
 newauthor:
