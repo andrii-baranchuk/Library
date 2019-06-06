@@ -1,3 +1,23 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\BookController::homepage
+
+new:
+    path: /book/new
+    controller: App\Controller\BookAdminController::new
+
+newauthor:
+   path: /author/new
+   controller: App\Controller\AuthorAdminController::newauthor
+
+newgenre:
+  path: /genre/new
+  controller: App\Controller\GenreAdminController::newgenre
+
+showGenre:
+    path: /Genre
+    controller: App\Controller\GenreController::showGenre
+
+genreBooks:
+    path: /genre/{slug}
+    controller: App\Controller\GenreController::showBooks

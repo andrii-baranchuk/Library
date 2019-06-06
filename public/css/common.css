@@ -14,17 +14,17 @@ time {
 /* HEADER */
 
 header.navbar {
-    background-color: #DC3543;
+    background-color: #55dc61;
 }
 
 header.navbar .navbar-brand {
     padding: 0;
 }
 
-header.navbar input.search {
-    border: none;
-    box-shadow: none;
-}
+/*header.navbar input.search {*/
+/*    border: none;*/
+/*    box-shadow: none;*/
+/*}*/
 
 header.navbar > nav .nav-item > .nav-link {
     font-size: 15px;

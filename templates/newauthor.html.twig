@@ -1,0 +1,11 @@
+{% extends 'content_base.html.twig' %}
+
+{% block content_body %}
+    <h1> Add a new author</h1>
+
+    {{ form_start(authorForm) }}
+        {{ form_widget(authorForm) }}
+
+        <button type = "submit" class = "btn btn-primary">Add</button>
+    {{ form_end(authorForm) }}
+{% endblock %}
