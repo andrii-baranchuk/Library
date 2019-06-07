@@ -5,11 +5,15 @@
 {% endblock %}
 
 {% block body %}
-    <a href="{{ path('edit',{id:book.id}) }}" class="btn btn-primary pull-right">
-        Edit <span class="fa fa-plus-circle"></span>
-    </a>
+
     <article class="full">
-        <h1>{{ book.name }}</h1><b>{% if book.status == 1 %}
+        <h1>{{ book.name }}
+            <a href="{{ path('edit',{id:book.id}) }}" class="btn btn-warning">
+                Edit <span class="fa fa-plus-circle"></span>
+            </a>
+        </h1>
+
+        <b>{% if book.status == 1 %}
                 Finished
             {% elseif book.status == 0 %}
                 Will read
