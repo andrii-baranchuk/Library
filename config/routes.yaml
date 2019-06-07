@@ -1,19 +1,29 @@
 index:
     path: /
     controller: App\Controller\BookController::homepage
+
 bookView:
     path: /book/{slug}
     controller: App\Controller\BookController::show
+
+bookList:
+    path: /admin/book/list
+    controller: App\Controller\BookAdminController::list
+
 new:
-    path: /bookform/new
+    path: admin/book/new
     controller: App\Controller\BookAdminController::new
 
+edit:
+    path: admin/book/{id}/edit
+    controller: App\Controller\BookAdminController::edit
+
 newauthor:
-   path: /author/new
+   path: admin/author/new
    controller: App\Controller\AuthorAdminController::newauthor
 
 newgenre:
-  path: /genre/new
+  path: admin/genre/new
   controller: App\Controller\GenreAdminController::newgenre
 
 showGenre:

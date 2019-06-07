@@ -56,7 +56,7 @@ class Book
     /**
      * @ORM\Column(type="boolean", nullable=true)
      */
-    private $finished;
+    private $status;
 
     public function getId(): ?int
     {
@@ -147,14 +147,14 @@ class Book
         return $this;
     }
 
-    public function getFinished(): ?bool
+    public function getStatus(): ?bool
     {
-        return $this->finished;
+        return $this->status;
     }
 
-    public function setFinished(?bool $finished): self
+    public function setStatus(?bool $status): self
     {
-        $this->finished = $finished;
+        $this->status = $status;
 
         return $this;
     }

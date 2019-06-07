@@ -8,11 +8,9 @@
 {% block body %}
         {% for book in genreBooks %}
             <article class="post">
-{#                <a href="#" class="genre-link">{{ book.genre.name }}</a>#}
-{#                <a href="{{ path('book_view', {id: book.id}) }}"><h4>{{ book.discription }}</h4></a>#}
-                <h4>{{ book.id }}</h4>
-                <h4>{{ book.name }}</h4>
-{#                <time>{{ book.year }}</time>#}
+                <a href="#" class="genre-link">{{ book.genre.name }}</a>
+                <a href="{{ path('bookView', {slug: book.slug}) }}"><h4>{{ book.name }}</h4></a>
+            </article>
             </article>
         {% endfor %}
     </section>
