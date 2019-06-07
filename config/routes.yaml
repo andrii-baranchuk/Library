@@ -33,3 +33,7 @@ showGenre:
 genreBooks:
     path: /genre/{slug}
     controller: App\Controller\GenreController::showBooks
+
+uploadTest:
+    path: /admin/upload/test
+    controller: App\Controller\BookAdminController::temporaryUploadAction

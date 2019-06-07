@@ -4,6 +4,7 @@
     <h1> Edit this book</h1>
 
     {{ form_start(bookForm) }}
+    {{ form_row(bookForm.imageFile) }}
         {{ form_widget(bookForm) }}
 
         <button type = "submit" class = "btn btn-primary">Update</button>

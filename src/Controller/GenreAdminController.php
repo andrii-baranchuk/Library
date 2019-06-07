@@ -24,7 +24,7 @@ class GenreAdminController extends AbstractController
             $em->persist($genre);
             $em->flush();
 
-            //return $this->redirectToRoute('home');
+            return $this->redirectToRoute('index');
         }
 
         return $this->render('newgenre.html.twig', ['genreForm' => $form->createView()]);

@@ -10,6 +10,7 @@ use App\Entity\Genre;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -41,6 +42,10 @@ class BookFormType extends AbstractType
                 return sprintf('(%d) %s',$genre->getId(), $genre->getName());
             },
             'placeholder' => 'Choose a genre',
+        ])
+
+        ->add('imageFile',FileType::class,[
+            'mapped' => false, 'required' =>false
         ])
         ;
     }

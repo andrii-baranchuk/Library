@@ -25,7 +25,7 @@ class AuthorAdminController extends AbstractController
             $em->persist($author);
             $em->flush();
 
-            //return $this->redirectToRoute('home');
+            return $this->redirectToRoute('index');
         }
 
         return $this->render('newauthor.html.twig',[ 'authorForm' => $form->createView()] );
