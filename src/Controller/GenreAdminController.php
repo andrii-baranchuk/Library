@@ -1,5 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
+/*
+ * This file is part of the library.
+ */
 
 namespace App\Controller;
 
@@ -16,6 +21,7 @@ class GenreAdminController extends AbstractController
         $form = $this->createForm(GenreFormType::class);
 
         $form->handleRequest($request);
+
         if ($form->isSubmitted() && $form->isValid()) {
             $data = $form->getData();
             $genre = new Genre();

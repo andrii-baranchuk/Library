@@ -1,8 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
+/*
+ * This file is part of the library.
+ */
 
 namespace App\Controller;
-
 
 use App\Entity\Book;
 use App\Repository\BookRepository;
@@ -15,15 +19,15 @@ class BookController extends AbstractController
         $books = $repository->findAll();
 
         return $this->render('home.html.twig', [
-            'books' => $books]);
+            'books' => $books, ]);
     }
 
     public function show(Book $book)
     {
         $book->getSlug();
 
-        return $this->render('view.html.twig',[
-            'book' => $book
+        return $this->render('view.html.twig', [
+            'book' => $book,
         ]);
     }
 }

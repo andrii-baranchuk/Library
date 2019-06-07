@@ -1,5 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
+/*
+ * This file is part of the library.
+ */
+
 namespace App\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
@@ -51,7 +57,7 @@ class Author
     }
 
     /**
-     * @return Collection|Book[]
+     * @return Book[]|Collection
      */
     public function getBooks(): Collection
     {
