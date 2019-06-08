@@ -9,7 +9,7 @@
         {% for book in books %}
             <article class="post">
                 <a href="#" class="genre-link">{{ book.genre.name }}</a>
-                <a href="{{ path('bookView', {slug: book.slug}) }}"><h4>{{ book.name }}</h4></a>
+                <a href="{{ path('book_view', {slug: book.slug}) }}"><h4>{{ book.name }}</h4></a>
             </article>
         {% endfor %}
     </section>

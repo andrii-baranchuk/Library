@@ -1,7 +1,7 @@
 {% extends 'content_base.html.twig' %}
 
 {% block content_body %}
-    <a href="{{ path('new') }}" class="btn btn-primary pull-right">
+    <a href="{{ path('new_book') }}" class="btn btn-primary pull-right">
         Add <span class="fa fa-plus-circle"></span>
     </a>
     <h1>All Books</h1>
@@ -22,7 +22,7 @@
                     <td>{{ book.author.name }}</td>
                     <td>{{ book.genre.name }}</td>
                     <td>
-                        <a href="{{ path('edit',{id:book.id}) }}" class="btn btn-primary">
+                        <a href="{{ path('book_edit',{id:book.id}) }}" class="btn btn-primary">
                             Edit <span class="fa fa-plus-circle"></span>
                         </a>
                     </td>

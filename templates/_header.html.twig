@@ -4,18 +4,18 @@
     </a>
     <nav class="collapse navbar-collapse" id="nav-items">
         <ul class="navbar-nav mr-auto">
-            {{ render_esi(url('showGenre')) }}
+            {{ render_esi(url('show_genre')) }}
         </ul>
-        <a class="btn btn-info" href="{{ path('new') }}">
+        <a class="btn btn-info" href="{{ path('new_book') }}">
             Add new book
         </a>
-        <a class="btn btn-info" href="{{ path('newauthor') }}">
+        <a class="btn btn-info" href="{{ path('new_author') }}">
             Add new author
         </a>
-        <a class="btn btn-info" href="{{ path('newgenre') }}">
+        <a class="btn btn-info" href="{{ path('new_genre') }}">
             Add new genre
         </a>
-        <a class="btn btn-primary" href="{{ path('bookList') }}">
+        <a class="btn btn-primary" href="{{ path('book_list') }}">
             Edit your books
         </a>
         {#TODO#}

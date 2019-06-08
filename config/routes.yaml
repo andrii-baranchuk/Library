@@ -2,38 +2,34 @@ index:
     path: /
     controller: App\Controller\BookController::homepage
 
-bookView:
+book_view:
     path: /book/{slug}
     controller: App\Controller\BookController::show
 
-bookList:
+book_list:
     path: /admin/book/list
     controller: App\Controller\BookAdminController::list
 
-new:
+new_book:
     path: admin/book/new
     controller: App\Controller\BookAdminController::new
 
-edit:
+book_edit:
     path: admin/book/{id}/edit
     controller: App\Controller\BookAdminController::edit
 
-newauthor:
+new_author:
    path: admin/author/new
-   controller: App\Controller\AuthorAdminController::newauthor
+   controller: App\Controller\AuthorAdminController::newAuthor
 
-newgenre:
+new_genre:
   path: admin/genre/new
-  controller: App\Controller\GenreAdminController::newgenre
+  controller: App\Controller\GenreAdminController::newGenre
 
-showGenre:
+show_genre:
     path: /Genre
     controller: App\Controller\GenreController::showGenre
 
-genreBooks:
+genre_books:
     path: /genre/{slug}
     controller: App\Controller\GenreController::showBooks
-
-uploadTest:
-    path: /admin/upload/test
-    controller: App\Controller\BookAdminController::temporaryUploadAction

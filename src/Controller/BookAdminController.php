@@ -73,7 +73,7 @@ class BookAdminController extends AbstractController
             $em->persist($book);
             $em->flush();
 
-            return $this->redirectToRoute('bookList');
+            return $this->redirectToRoute('index');
         }
 
         return $this->render('editbook.html.twig', [
