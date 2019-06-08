@@ -33,6 +33,6 @@ class GenreAdminController extends AbstractController
             return $this->redirectToRoute('index');
         }
 
-        return $this->render('newgenre.html.twig', ['genreForm' => $form->createView()]);
+        return $this->render('new_genre.html.twig', ['genreForm' => $form->createView()]);
     }
 }

@@ -33,6 +33,6 @@ class AuthorAdminController extends AbstractController
             return $this->redirectToRoute('index');
         }
 
-        return $this->render('newauthor.html.twig', [ 'authorForm' => $form->createView()]);
+        return $this->render('new_author.html.twig', [ 'authorForm' => $form->createView()]);
     }
 }
