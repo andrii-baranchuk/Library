@@ -17,7 +17,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\Request;
 
-class BookAdminController extends AbstractController
+class BookController extends AbstractController
 {
     public function new(EntityManagerInterface $em, Request $request)
     {

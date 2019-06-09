@@ -14,7 +14,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 
-class GenreAdminController extends AbstractController
+class GenreController extends AbstractController
 {
     public function newgenre(EntityManagerInterface $em, Request $request)
     {

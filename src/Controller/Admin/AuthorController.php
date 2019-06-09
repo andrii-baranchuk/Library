@@ -14,7 +14,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 
-class AuthorAdminController extends AbstractController
+class AuthorController extends AbstractController
 {
     public function newauthor(EntityManagerInterface $em, Request $request)
     {
