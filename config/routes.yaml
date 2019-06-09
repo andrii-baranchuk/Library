@@ -8,23 +8,23 @@ book_view:
 
 book_list:
     path: /admin/book/list
-    controller: App\Controller\BookAdminController::list
+    controller: App\Controller\Admin\BookAdminController::list
 
 new_book:
     path: admin/book/new
-    controller: App\Controller\BookAdminController::new
+    controller: App\Controller\Admin\BookAdminController::new
 
 book_edit:
     path: admin/book/{id}/edit
-    controller: App\Controller\BookAdminController::edit
+    controller: App\Controller\Admin\ookAdminController::edit
 
 new_author:
    path: admin/author/new
-   controller: App\Controller\AuthorAdminController::newAuthor
+   controller: App\Controller\Admin\AuthorAdminController::newAuthor
 
 new_genre:
   path: admin/genre/new
-  controller: App\Controller\GenreAdminController::newGenre
+  controller: App\Controller\Admin\GenreAdminController::newGenre
 
 show_genre:
     path: /Genre

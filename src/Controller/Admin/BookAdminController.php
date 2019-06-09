@@ -6,7 +6,7 @@ declare(strict_types=1);
  * This file is part of the library.
  */
 
-namespace App\Controller;
+namespace App\Controller\Admin;
 
 use App\Entity\Book;
 use App\Form\BookFormType;
