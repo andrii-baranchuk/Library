@@ -16,7 +16,7 @@ new_book:
 
 book_edit:
     path: admin/book/{id}/edit
-    controller: App\Controller\Admin\ookAdminController::edit
+    controller: App\Controller\Admin\BookAdminController::edit
 
 new_author:
    path: admin/author/new
