@@ -35,13 +35,13 @@ class BookFormType extends AbstractType
         ->add('year')
         ->add('author', EntityType::class, [
             'class' => Author::class,'choice_label' => function (Author $author) {
-                return \sprintf('(%d) %s', $author->getId(), $author->getName());
+                return \sprintf('%s',$author->getName());
             },
             'placeholder' => 'Choose an author',
             ])
         ->add('genre', EntityType::class, [
             'class' => Genre::class,'choice_label' => function (Genre $genre) {
-                return \sprintf('(%d) %s', $genre->getId(), $genre->getName());
+                return \sprintf('%s',$genre->getName());
             },
             'placeholder' => 'Choose a genre',
         ])

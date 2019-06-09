@@ -19,7 +19,7 @@ class GenreController extends AbstractController
         $em = $this->getDoctrine()->getRepository(Genre::class);
         $genres = $em->findAll();
 
-        return $this->render('_header_genres.html.twig', ['genres' => $genres]);
+        return $this->render('genre/_header_genres.html.twig', ['genres' => $genres]);
     }
 
     public function showBooks($slug): Response
@@ -28,6 +28,6 @@ class GenreController extends AbstractController
 
         $genreBooks = $em->findOneBy(['slug' => $slug])->getBooks();
 
-        return $this->render('genre_books.html.twig', ['genreBooks' => $genreBooks]);
+        return $this->render('genre/genre_books.html.twig', ['genreBooks' => $genreBooks]);
     }
 }

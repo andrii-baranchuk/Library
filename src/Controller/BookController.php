@@ -24,9 +24,7 @@ class BookController extends AbstractController
 
     public function show(Book $book)
     {
-        $book->getSlug();
-
-        return $this->render('view.html.twig', [
+        return $this->render('book/view.html.twig', [
             'book' => $book,
         ]);
     }
